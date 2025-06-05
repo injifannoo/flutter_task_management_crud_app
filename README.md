@@ -41,17 +41,21 @@ This project was developed as a pre-interview technical task for the **Flutter D
    ```bash
    git clone https://github.com/your-username/flutter_task_management_crud_app.git
    cd flutter_task_management_crud_app
+   ```
+   
 2. **Install dependencies:**
 
 ```bash
 flutter pub get
-
+```
 3. **Run the app:**
 
 ```bash
 flutter run
-
+`
+``
 **📁 Project Structure (Clean Architecture)**
+
 ```bash
 lib/
 │
@@ -60,7 +64,7 @@ lib/
 ├── presentation/        # UI layer: widgets, screens, and BLoC
 ├── core/                # Shared code (constants, utilities)
 └── main.dart            # Entry point
-
+```
 **🤔 Assumptions**
 Tasks have a title and description only (no due dates, priority, or tags).
 
