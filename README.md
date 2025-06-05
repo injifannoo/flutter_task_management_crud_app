@@ -1,5 +1,3 @@
-# task_management
-
 # Flutter Task Management CRUD App
 
 A simple Task Management mobile application built with **Flutter**, implementing **CRUD** (Create, Read, Update, Delete) functionalities using the **BLoC pattern** and following **Clean Architecture** principles.
@@ -52,16 +50,18 @@ flutter pub get
 
 ```bash
 flutter run
-`
-``
+```
+
 **📁 Project Structure (Clean Architecture)**
 
 ```bash
 lib/
 │
-├── data/                # Data layer: models, repositories, and data sources
-├── domain/              # Domain layer: entities and use cases
-├── presentation/        # UI layer: widgets, screens, and BLoC
+   ├── features
+      ├── task 
+         ├── data/                # Data layer: models, repositories, and data sources
+         ├── domain/              # Domain layer: entities and use cases
+         ├── presentation/        # UI layer: widgets, screens, and BLoC
 ├── core/                # Shared code (constants, utilities)
 └── main.dart            # Entry point
 ```
