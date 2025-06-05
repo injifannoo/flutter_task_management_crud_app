@@ -43,15 +43,16 @@ This project was developed as a pre-interview technical task for the **Flutter D
    cd flutter_task_management_crud_app
 2. **Install dependencies:**
 
-bash
+```bash
 flutter pub get
-Run the app:
 
-bash
+3. **Run the app:**
+
+```bash
 flutter run
 
 **📁 Project Structure (Clean Architecture)**
-bash
+```bash
 lib/
 │
 ├── data/                # Data layer: models, repositories, and data sources
