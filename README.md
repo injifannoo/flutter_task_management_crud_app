@@ -57,13 +57,26 @@ flutter run
 ```bash
 lib/
 │
-   ├── features
-      ├── task 
-         ├── data/                # Data layer: models, repositories, and data sources
-         ├── domain/              # Domain layer: entities and use cases
-         ├── presentation/        # UI layer: widgets, screens, and BLoC
-├── core/                # Shared code (constants, utilities)
-└── main.dart            # Entry point
+├── core/                          # Shared utilities, constants, themes, etc.
+│
+├── features/
+│   └── task/
+│       ├── data/                  # Data layer: models, repositories, and data sources (e.g., local or remote)
+│       │   ├── models/            # Data models representing task structure
+│       │   ├── repositories/      # Implementation of repositories
+│       │   └── datasources/       # Data source files (e.g., local DB or API services)
+│       │
+│       ├── domain/                # Domain layer: entities and use cases
+│       │   ├── entities/          # Core business entities (e.g., Task)
+│       │   └── usecases/          # Business logic (e.g., AddTask, GetTasks, etc.)
+│       │
+│       └── presentation/          # UI layer: widgets, screens, BLoC
+│           ├── bloc/              # BLoC files (events, states, bloc)
+│           ├── screens/           # Main app screens (e.g., TaskListScreen, AddTaskScreen)
+│           └── widgets/           # Reusable widgets (e.g., TaskTile, CustomTextField)
+│
+└── main.dart                      # Entry point of the application
+
 ```
 **🤔 Assumptions**
 Tasks have a title and description only (no due dates, priority, or tags).
